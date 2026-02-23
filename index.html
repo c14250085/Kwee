@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header">
+    <h1>⠀</h1>
+  </div>
+
+  <div class="container">
+
+    <div class="menu-section">
+      
+      <div class="input-group">
+        <h2>Nama</h2>
+        <input type="text" id="customerName" placeholder="⠀">
+      </div>
+
+      <h2>Menu Utama</h2>
+      <div id="mainMenu" class="button-group">
+        <button onclick="selectMain('Dimsum Mentai', this)">Dimsum Mentai</button>
+        <button onclick="selectMain('Wonton', this)">Wonton</button>
+        <button onclick="selectMain('Crispy', this)">Crispy</button>
+        <button onclick="selectMain('Combo', this)">Combo</button>
+      </div>
+
+      <h2>Pilihan</h2>
+      <div id="subMenu">
+        <p class="placeholder-text">⠀</p>
+      </div>
+
+      <div class="input-group">
+        <h2>Note</h2>
+        <input type="text" id="note" placeholder="⠀">
+      </div>
+
+      <button class="done-btn" onclick="addOrder()">Tambah</button>
+
+    </div>
+
+    <div class="order-section">
+      <div class="order-header">
+        <h2>Pesanan</h2>
+        <button class="delete-btn" onclick="deleteSelected()">Hapus Order</button>
+      </div>
+      <div class="order-list" id="orderList"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
